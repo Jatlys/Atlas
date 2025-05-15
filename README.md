@@ -19,8 +19,8 @@ In order to address these problems, we came up with Atlas as a solution.
 
 
 ## Project Done By:
-Aderic Choo
-Amit Sanke
-Isaac Oh
-Jatlyson Ang
-Rittambhra Rani
+- Aderic Choo
+- Amit Sanke
+- Isaac Oh - https://github.com/Isaac8116
+- Jatlyson Ang  - https://github.com/jatlys
+- Rittambhra Rani - https://github.com/ritzbizkit
