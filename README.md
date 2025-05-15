@@ -15,8 +15,10 @@ In order to address these problems, we came up with Atlas as a solution.
 *3D Visualised Render of Atlas*
 ![untitled 23](https://github.com/user-attachments/assets/df553a92-c5a9-4a03-bbbb-38029ef43181)
 
+
 *Our Prototype*
 ![Prototype](https://github.com/user-attachments/assets/d30bc3a7-7352-48a3-ae61-018bb654b4e0)
+
 
 ## Project Done By:
 - Aderic Choo
@@ -29,7 +31,7 @@ In order to address these problems, we came up with Atlas as a solution.
 ## Prototype Videos
 
 ## Poster
-[Poster](https://github.com/user-attachments/files/20233364/A1.Poster.pdf)
+![A1 Poster](https://github.com/user-attachments/assets/a028dfdb-560e-428b-bd2b-a76988331b78)
 
 ### Hardware Components:
 - Flight Controller: MATEK Mateksys F405-VTOL
