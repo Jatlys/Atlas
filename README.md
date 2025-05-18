@@ -40,6 +40,32 @@ In order to address these problems, we came up with Atlas as a solution.
 
 ## Prototype Videos
 
+## HuskyLens Vision-Based AprilTag Detection
+YouTube Video Link: https://youtu.be/luibbBOE88s 
+
+### Overview
+This section presents a proof-of-concept system for visual target detection using the HuskyLens AI camera. It is part of a larger effort to develop an autonomous landing and navigation pipeline for drones. In this setup, a Raspberry Pi 3B communicates with the HuskyLens via UART and forwards parsed detection data as MAVLink messages to a flight controller. This serves as an initial prototype for what will later be transitioned to a wireless MAVLink telemetry-based architecture in final deployment.
+
+### System Architecture
+- HuskyLens Camera: Performs onboard tag detection and tracking. Sends data over UART.
+- Raspberry Pi 3B: Acts as the intermediary processing unit. It receives serial input from HuskyLens, extracts relevant information (e.g., tag ID, position), and constructs corresponding MAVLink messages.
+- Flight Controller: Receives MAVLink LANDING_TARGET and HEARTBEAT messages from the Raspberry Pi via USB or telemetry port.
+- Ground Control Station: Displays received data in software such as Mission Planner for debugging and demonstration purposes.
+
+### Proof-of-Concept Objectives
+- Demonstrate basic communication between the HuskyLens and Raspberry Pi using UART.
+- Parse detection output and reformat it into MAVLink-compatible messages.
+- Transmit LANDING_TARGET messages to simulate visual target tracking.
+- Maintain a HEARTBEAT connection with the ground station to simulate real-time system activity.
+- Provide a working baseline for transitioning to wireless telemetry in future iterations.
+
+### Future Development
+- Replace UART with wireless MAVLink telemetry for long-range, real-time communication.
+- Integrate a Livox or similar high-resolution depth camera to improve detection fidelity.
+- Implement GPS-based coordination and landing logic in flight controller firmware.
+- Develop a modular interface for switching between multiple sensor input sources.
+- Optional migration to ROS2 for more complex system orchestration if needed.
+
 ## Poster
 ![A1 Poster](https://github.com/user-attachments/assets/a028dfdb-560e-428b-bd2b-a76988331b78)
 
